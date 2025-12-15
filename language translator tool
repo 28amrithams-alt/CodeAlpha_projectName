@@ -1,0 +1,40 @@
+import streamlit as st
+
+st.set_page_config(
+    page_title="Language Translator",
+    layout="centered"
+)
+
+# ---------- BACKGROUND STYLE ----------
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background: linear-gradient(to right, #141e30, #243b55);
+        color: white;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+st.title("Welcome to Language Translation Tool")
+
+st.write(
+    "This web application allows users to translate text between multiple languages "
+    "by selecting source and target languages."
+)
+
+st.markdown("---")
+
+st.subheader("Key Features")
+st.write("""
+• Multi-language support  
+• Source & target language selection  
+• Text translation  
+• Audio output (Text-to-Speech)  
+• Copy translated text  
+""")
+
+st.markdown("---")
+st.info("Use the *sidebar* to open the Translator page.")
